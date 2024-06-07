@@ -1,7 +1,7 @@
 const Btn = ({ onClick }) => {
     
     return(
-        <button onClick={onClick}>Click me</button>
+        <button onClick={onClick}>Guess the number between 1 and 3</button>
     )
 }
 

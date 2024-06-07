@@ -5,7 +5,12 @@ import Btn from "./components/Btn";
 import Card from "./components/Card";
 
 function App() {
-  const clickHandler = () => console.log("clicked; passed from App prop");
+  const clickHandler = () => {
+    let randomNum = Math.floor(Math.random() * 3) + 1;
+    console.log(randomNum);
+    let userInput = prompt('type a number');
+    alert(`Conputer number: ${randomNum}, Your guess: ${userInput}`);
+  };
 
   return (
     <div className="App">
